@@ -4,6 +4,7 @@ import ActiveQuiz from "../../Components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../Components/FinishedQuiz/FinishedQuiz";
 import axios from "../../axios/axios-quiz";
 import Loader from "../../Components/UI/Loader/Loader";
+import { connect } from "react-redux";
 
 class Quiz extends Component {
     state = {
@@ -123,4 +124,15 @@ class Quiz extends Component {
     }
 }
 
-export default Quiz;
+function mapStateToProps(state){
+    return{
+
+    }
+}
+function mapDispatchToProps(dispatch){
+    return{
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Quiz);
